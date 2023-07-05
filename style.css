@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+body{
+    background: linear-gradient(#FFF8F0, #C792DF );
+    overflow: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+.calculator__container{
+    width: 90%;
+}
+.calculator{
+    box-shadow: 0px 0px 20px 3px #231F20;
+    border-radius: 10px;
+    padding: 15px;
+    background-color:#231F20 ;
+    transition: .5s all;
+    width: 100%;
+    
+}
+
+
+td >button{
+    border-style: none;
+    margin: 5px;
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: .3s all;
+}
+td >button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.number:hover{
+    background:rgba(141, 228, 255,.8);
+}
+.display__screen{
+    padding: 10px 0;
+    font-size: 50px;
+    font-weight: bold;
+    
+    color:#F6F7F8 ;
+    height: 150px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    letter-spacing: 5px;
+}
+
+.number{
+    background-color: #5acaec;
+}
+.operation{
+    background-color: rgb(228, 138, 187);
+}
+.operation:hover{
+    background-color: rgba(228,138,187,.8);
+}
+.clear{
+    background-color: rgb(187, 68, 48);
+}
+.clear:hover{
+    background-color: rgba(187, 68, 48,.8);
+}
+
+.equal, #one__clear{
+    background-color:#2EC4B6 ;
+}
+.theme{
+    text-align: end;
+}
+.theme__dark{
+    padding: 20px;
+    border-style: none;
+    border-radius: 50%;
+    text-align: end;
+    transition: 1s all;
+}
+.theme__dark:hover{
+    cursor: pointer;
+}
+
+.calculator__dark{
+    background-color: #FFF8F0;  
+    transition: .5s all;
+}
+.display__screen__dark{
+    color: #231F20;
+}
+.icono__dark{
+    background-color: #231F20;
+    transition: 0.5s all;
+}
+.button__dark{
+    opacity: .5;
+}
+@media(min-width:768px){
+    .calculator{
+        box-shadow: 0px 0px 20px 3px #231F20;
+        border-radius: 10px;
+        padding: 15px;
+        background-color:#231F20 ;
+        transition: .5s all;
+        width: 500px;
+    }
+}

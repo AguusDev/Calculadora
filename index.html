@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="../../normalize.css"> -->
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="calculator__container">
+                <div class="calculator">
+                    <div class="theme dark">
+                        <button class="theme__dark"></button>
+                    </div>
+                    <div class="display__screen">
+                        <div id="display"></div>
+                    </div>
+                    <div class="buttons">
+                        <table>
+                            <tr>
+                                <td><button class="clear" id="clear">C</button></td>
+                                <td><button class="operation" id="/">/</button></td>
+                                <td><button class="operation" id="*">x</button></td>
+                                <td><button id="one__clear">⬅</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="number" id="7">7</button></td>
+                                <td><button class="number" id="8">8</button></td>
+                                <td><button class="number" id="9">9</button></td>
+                                <td><button class="operation" id="-">-</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="number" id="4">4</button></td>
+                                <td><button class="number" id="5">5</button></td>
+                                <td><button class="number" id="6">6</button></td>
+                                <td><button class="operation" id="+">+</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="number" id="1">1</button></td>
+                                <td><button class="number" id="2">2</button></td>
+                                <td><button class="number" id="3">3</button></td>
+                                <td><button class="equal" rowspan="2" id="equal">=</button></td>
+                            </tr>
+                            <tr>
+                                <td><button class="operation " id=".">.</button></td>
+                                <td><button class="number" id="0">0</button></td>
+                                <td><button class="number" id="00">00</button></td>
+                                
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
